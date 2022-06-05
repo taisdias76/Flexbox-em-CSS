@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-itens</title>
+
+    <style>
+        body{
+            background-color: #f4f1de;
+            padding: 25px;
+        }
+
+        .container{
+            max-width: 350px;
+            border: 1px solid #333d29;
+            display: flex;
+        }
+
+        .item{
+            background-color: #936639;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+            font-family:'Courier New', Courier, monospace;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <h2>Center</h2>
+    <section class="container center">
+        <div class="item">CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <h2>Stretch</h2>
+    <!---Faz os meus itens crescerem de acordo com o meu maior item 
+        (nesse caso relacionado com a altura)-->
+    <section class="container stretch">
+        <div class="item">CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <h2>Flex-start</h2>
+    <section class="container start">
+        <div class="item">CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <h2>Flex-end</h2>
+    <section class="container end">
+        <div class="item">CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <h2>Baseline</h2>
+    <section class="container baseline">
+        <div class="item"><br>CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <br>
+
+    <h1>column</h1>
+    <h2>Center</h2>
+    <section class="container center column">
+        <div class="item">CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <h2>Stretch</h2>
+    <!---Faz os meus itens crescerem de acordo com o meu maior item 
+        (nesse caso relacionado com a altura)-->
+    <section class="container stretch column">
+        <div class="item">CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <h2>Stretch</h2>
+    <!---Faz os meus itens crescerem de acordo com o meu maior item 
+        (nesse caso relacionado com a altura)-->
+    <section class="container stretch column">
+        <div class="item">CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <h2>Flex-start</h2>
+    <section class="container start column">
+        <div class="item">CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <h2>Flex-end</h2>
+    <section class="container end column">
+        <div class="item">CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <h2>Baseline</h2>
+    <section class="container baseline column">
+        <div class="item"><br>CSS - Flexbox</div>
+        <div class="item">Fundamentos - Flex Container: Align-items</div>
+        <div class="item">Align-items: Center</div>
+    </section>
+
+    <br>
+
+    <h2>Alinhamento central a tela</h2>
+    <section class="container central center">
+        <div class="item">Olá, meu nome é Tais e eu estou aprendendo CSS-Flexbox com a DIO.</div>
+    </section>
+</body>
+</html>

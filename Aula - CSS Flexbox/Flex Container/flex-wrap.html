@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-wrap</title>
+
+    <style>
+        body{
+            background-color: #f4f1de;
+            padding: 20px;
+        }
+
+        .flex-container{
+            display: flex;
+            height: 150px;
+            border: 2px solid #081c15;
+            max-width: 300px;
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            min-width: 100px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>nowrap</h1>
+    <div class="flex-container nowrap">
+        <div class="item" style="background-color: #1b4332; color: white;">1</div>
+        <div class="item" style="background-color: #2d6a4f; color: white;">2</div>
+        <div class="item" style="background-color: #40916c; color: white;">3</div>
+        <div class="item" style="background-color: #52b788; color: white;">4</div>
+    </div>
+
+    <h1>wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item" style="background-color: #1b4332; color: white;">1</div>
+        <div class="item" style="background-color: #2d6a4f; color: white;">2</div>
+        <div class="item" style="background-color: #40916c; color: white;">3</div>
+        <div class="item" style="background-color: #52b788; color: white;">4</div>
+        <div class="item" style="background-color: #74c69d; color: white;">5</div>
+        <div class="item" style="background-color: #95d5b2; color: white;">6</div>
+    </div>
+
+    <h1>wrap-reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item" style="background-color: #1b4332; color: white;">1</div>
+        <div class="item" style="background-color: #2d6a4f; color: white;">2</div>
+        <div class="item" style="background-color: #40916c; color: white;">3</div>
+        <div class="item" style="background-color: #52b788; color: white;">4</div>
+        <div class="item" style="background-color: #74c69d; color: white;">5</div>
+        <div class="item" style="background-color: #95d5b2; color: white;">6</div>
+    </div>
+</body>
+</html>
